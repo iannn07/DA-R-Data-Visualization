@@ -10,6 +10,7 @@ x <- as.integer(x[1])
 stars(x)
 
 cat("\n")
+
 # Here's how to print a triangle shape using function
 pattern <- function(y) {
     for (i in 1:y) {
@@ -24,6 +25,7 @@ y <- readline(prompt = "Insert how many stars do you want to print in triangle s
 pattern(y)
 
 cat("\n")
+# Here's a function to print the result of exponent of a number
 exponent <- function(a, b){
     if(a %% 2 == 0){
         return(a ** b)
