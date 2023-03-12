@@ -4,7 +4,7 @@ print(list_vector)
 print(paste("The length of list_vector is: ", length(list_vector)))
 
 # Remember when we need to call a value from a variable in Vectors.R line 14 & 46?
-# We need to call the value by using [[]] method or []
+# We need to call the value by using [[]] method or [] right?
 
 # Using list, we can use $ as alternative and it will be like
 list_of_data <- list("Name" = "Johnny", "Who" = "Papa")
