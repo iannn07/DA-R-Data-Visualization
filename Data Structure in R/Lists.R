@@ -5,9 +5,11 @@ print(paste("The length of list_vector is: ", length(list_vector)))
 
 # Remember when we need to call a value from a variable in Vectors.R line 14 & 46?
 # We need to call the value by using [[]] method or []
+
 # Using list, we can use $ as alternative and it will be like
 list_of_data <- list("Name" = "Johnny", "Who" = "Papa")
 print(list_of_data$Who)
+
 # It's same like
 print(list_of_data[["Name"]])
 
@@ -21,5 +23,4 @@ list_of_data[["Size"]] <- size
 print(list_of_data)
 
 cat("\n")
-# FYI, we can merge 2 lists using c() function like this
-
+# FYI, we can merge 2 lists using c() function
