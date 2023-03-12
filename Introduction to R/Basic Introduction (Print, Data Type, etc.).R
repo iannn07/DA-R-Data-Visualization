@@ -10,6 +10,13 @@ cat("2 + 2 = ", x)
 
 cat("\n\n")
 
+# We can use paste() function if we want to print a value combined with a string
+print(paste("2 + 2 = ", x))
+
+# Or we can use sprintf() if we want to print like c++
+y <- 5 + x
+print(sprintf("5 + x = %d", y))
+
 # Printing an array
 num <- c(1, 2, 3, 4, 5)
 print(num)
