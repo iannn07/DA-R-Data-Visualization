@@ -5,15 +5,41 @@
 
 # The most important thing in Data Structure using R is DataFrame
 # DataFrame is a two dimension but using different type of data but in table
+
+# Here's the basic formula of accessing DataFrame:
+
+# data_frame[row_number, col_number]
+# Remember that matrix in R is started from it's Row then it's Col like this
+# 1 3 5
+# 2 4 6
+
 # Here's an example of DataFrame
 
-data_frame <- data.frame("Name" = c("Hinata", "Naruto", "John", "Smith", "Lucy"), "Age" = c(28, 25, 50, 10, 20))
+data_frame <- data.frame(Name = c("Hinata", "Naruto", "John", "Smith", "Lucy"),
+                         Age = c(28, 25, 50, 10, 20))
 print(data_frame)
 
 cat("\n")
-# We can access DataFrame like Lists using $
+# We can access DataFrame column like Lists using $
 print(data_frame$Name)
 print(sum(data_frame$Age))
+
+# Basic Formula on the line 11
+print(data_frame[c(2, 3), c(1, 2)])
+cat("\n")
+
+# Remember that DataFrame is based on Table?
+# There's a tips for adding a new row and new column
+
+# Adding new value in data_frame sets
+data_frame$DoB <- c("US", "Canada", "Japan", "UK", "HKK")
+
+# Adding new row
+new_data_frame <- data.frame(Name = c("Yanto", "Waterfall", "Ghost"),
+                             Age = c(29, 30, 41), DoB = c("BKK", "DPS", "SBY"))
+# rbind() as the function
+data_frame <- rbind(data_frame, new_data_frame)
+print(data_frame)
 
 # Here's a sample program that create a nickname
 index <- as.integer(readline(prompt = "Please insert the index of your nickname: "))
