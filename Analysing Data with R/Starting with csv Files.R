@@ -17,6 +17,13 @@ print(sum(car_details_data$TAX))
 
 mean_details <- mean(car_details_data$TAX)
 print(car_details_data[car_details_data$TAX < mean_details, ])
+cat("\n")
+
+# We can use this syntax to take a column and multiple column
+print(car_details_data[car_details_data$TAX < mean_details, 'ENGINESIZE', drop(FALSE)])
+cat("\n")
+print(car_details_data[car_details_data$TAX < mean_details, c('MODEL', 'ENGINESIZE'), drop(FALSE)])
+cat("\n")
 
 # We can also manipulate it by 2 column at one time like this
 # Find the type of engine size with the tax < mean_details (88)
