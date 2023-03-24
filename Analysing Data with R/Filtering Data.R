@@ -1,6 +1,7 @@
 # Fun Fact, we don't need to import car_details_data since it has been declared in other file
 # Filtering Data
 # Example, we want to find the car with less than 2.0 litres with the price is < 15000
+car_details_data <- read.csv2("Car_Details_Example.csv")
 x <- car_details_data[car_details_data$ENGINESIZE < 2.0 & car_details_data$PRICE < 15000, ]
 print(x)
 

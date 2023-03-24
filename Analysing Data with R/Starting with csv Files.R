@@ -28,3 +28,7 @@ cat("\n")
 # We can also manipulate it by 2 column at one time like this
 # Find the type of engine size with the tax < mean_details (88)
 print(factor(car_details_data[car_details_data$TAX < mean_details, ]$ENGINESIZE))
+
+# There is other method to obtain column name and the row name by using
+print(rownames(car_details_data))
+print(colnames(car_details_data))
